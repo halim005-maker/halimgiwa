@@ -1,16 +1,18 @@
-# program to display the fibonacci sequence up to n-th term
-# fibonacci series will start at 0 and travel upto below number
-number = int(input("nplease enter the range number: "))
-#initializing first and second values of the series
-i = 0
-first_value = 0
-second_value = 1
-# find & displaying fibonacci series
-while(i ˂ number) :
-    if(i ˂= 1) :
-        next = i
+def fib(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+
     else:
-        next = first_value + second_value
-        first_value = second_value
-        print(next)
-        i = i + 1
+        print (a)
+        print (b)
+
+        for i in range (2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+
+fib(5)
+
