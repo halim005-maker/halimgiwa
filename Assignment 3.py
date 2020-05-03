@@ -1,4 +1,4 @@
-Write a program to print fibonacci series till given number
+#Write a program to print fibonacci series till given number
 
 def fib(n):
     a = 0
